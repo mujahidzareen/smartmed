@@ -190,5 +190,3 @@ def predict():
     else:
         return jsonify({"error": 'Unable to make prediction'}), 400
 
-if __name__ == '__main__':
-    app.run(debug=True)
