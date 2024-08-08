@@ -1,0 +1,1824 @@
+{
+  "E_91": {
+    "E_91": "fievre",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_55": {
+    "E_55": "douleurxx_endroitducorps",
+    "Values": {
+      "V_123": "nulle_part",
+      "V_14": "aile_iliaque_D_",
+      "V_15": "aile_iliaque_G_",
+      "V_16": "aine_D_",
+      "V_17": "aine_G_",
+      "V_19": "aisselle_G_",
+      "V_18": "aisselle_D_",
+      "V_20": "amygdale_D_",
+      "V_21": "amygdale_G_",
+      "V_22": "anus",
+      "V_26": "arri\u00e8re_du_cou",
+      "V_25": "arri\u00e8re_de_t\u00eate",
+      "V_30": "biceps_D_",
+      "V_31": "biceps_G_",
+      "V_32": "bouche",
+      "V_33": "cartilage_thyroidien",
+      "V_34": "cheville_D_",
+      "V_35": "cheville_G_",
+      "V_36": "clitoris",
+      "V_37": "coccyx",
+      "V_38": "colonne_cervicale",
+      "V_39": "colonne_dorsale",
+      "V_40": "colonne_lombaire",
+      "V_41": "commissure_D_",
+      "V_42": "commissure_G_",
+      "V_49": "cr\u00eate_iliaque_D_",
+      "V_50": "cr\u00eate_iliaque_G_",
+      "V_51": "cuisse_D_",
+      "V_52": "cuisse_G_",
+      "V_57": "dents_inf\u00e9rieures_D_",
+      "V_58": "dents_inf\u00e9rieures_G_",
+      "V_59": "dents_sup\u00e9rieures_D_",
+      "V_60": "dents_sup\u00e9rieures_G_",
+      "V_67": "doigt_index__D_",
+      "V_68": "doigt_index__G_",
+      "V_69": "doigt_majeur__D_",
+      "V_70": "doigt_majeur__G_",
+      "V_63": "doigt_annulaire__D_",
+      "V_64": "doigt_annulaire__G_",
+      "V_65": "doigt_auriculaire__D_",
+      "V_66": "doigt_auriculaire__G_",
+      "V_62": "dessus_de_t\u00eate",
+      "V_194": "\u00e9paule_D_",
+      "V_195": "\u00e9paule_G_",
+      "V_197": "\u00e9pigastre",
+      "V_27": "avant-bras_D_",
+      "V_28": "avant-bras_G_",
+      "V_76": "face_dorsale_main_D_",
+      "V_77": "face_dorsale_main_G_",
+      "V_72": "face_dorsale_du_pied_D_",
+      "V_73": "face_dorsale_du_pied_G_",
+      "V_74": "face_dorsale_du_poignet_D_",
+      "V_75": "face_dorsale_du_poignet_G_",
+      "V_149": "plante_du_pied_D_",
+      "V_150": "plante_du_pied_G_",
+      "V_80": "face_palmaire_du_poignet_D_",
+      "V_81": "face_palmaire_du_poignet_G_",
+      "V_43": "cot\u00e9_lateral_du_pied_D_",
+      "V_44": "cot\u00e9_lateral_du_pied_G_",
+      "V_82": "fesse_D_",
+      "V_83": "fesse_G_",
+      "V_84": "flanc_D_",
+      "V_85": "flanc_G_",
+      "V_78": "face_palmaire_de_l_avant-bras_D_",
+      "V_79": "face_palmaire_de_l_avant-bras_G_",
+      "V_87": "fosse_iliaque_D_",
+      "V_88": "fosse_iliaque_G_",
+      "V_89": "front",
+      "V_92": "genou_D_",
+      "V_93": "genou_G_",
+      "V_90": "gencive_inf\u00e9rieure",
+      "V_47": "creux_poplit\u00e9_D_",
+      "V_48": "creux_poplit\u00e9_G_",
+      "V_91": "gencive_sup\u00e9rieure",
+      "V_94": "gland",
+      "V_95": "grande_l\u00e8vre_D_",
+      "V_96": "grande_l\u00e8vre_G_",
+      "V_97": "gros_orteil_D_",
+      "V_98": "gros_orteil_G_",
+      "V_99": "hanche_D_",
+      "V_100": "hanche_G_",
+      "V_102": "hymen",
+      "V_103": "hypochondre_D_",
+      "V_104": "hypochondre_G_",
+      "V_105": "ischio_D_",
+      "V_106": "ischio_G_",
+      "V_108": "joue_D_",
+      "V_109": "joue_G_",
+      "V_110": "joue_interne_D_",
+      "V_111": "joue_interne_G_",
+      "V_53": "c\u00f4t\u00e9_du_cou_D_",
+      "V_54": "c\u00f4t\u00e9_du_cou_G_",
+      "V_55": "c\u00f4t\u00e9_du_thorax_D_",
+      "V_56": "c\u00f4t\u00e9_du_thorax_G_",
+      "V_116": "l\u00e8vre_inferieure_D_",
+      "V_117": "l\u00e8vre_sup\u00e9rieure_D_",
+      "V_113": "loge_renale_D_",
+      "V_114": "loge_renale_G_",
+      "V_115": "luette",
+      "V_121": "m\u00e2choire",
+      "V_118": "menton",
+      "V_29": "bas_du_thorax",
+      "V_119": "mollet_D_",
+      "V_120": "mollet_G_",
+      "V_122": "nez",
+      "V_124": "occiput",
+      "V_125": "oeil_D_",
+      "V_126": "oeil_G_",
+      "V_127": "omoplate_D_",
+      "V_128": "omoplate_G_",
+      "V_129": "oreille_D_",
+      "V_130": "oreille_G_",
+      "V_131": "orteil__1__D_",
+      "V_132": "orteil__1__G_",
+      "V_133": "orteil__2__D_",
+      "V_134": "orteil__2__G_",
+      "V_135": "orteil__3__D_",
+      "V_136": "orteil__3__G_",
+      "V_144": "petit_orteil__4__D_",
+      "V_145": "petit_orteil__4__G_",
+      "V_45": "coude_D_",
+      "V_46": "coude_G_",
+      "V_137": "palais",
+      "V_170": "thorax_post\u00e9rieur_D_",
+      "V_171": "thorax_post\u00e9rieur_G_",
+      "V_139": "paroi_vaginale",
+      "V_140": "paroi_vaginale_D_",
+      "V_141": "paroi_vaginale_G_",
+      "V_142": "paume_D_",
+      "V_143": "paume_G_",
+      "V_155": "p\u00e9nis",
+      "V_187": "ventre",
+      "V_146": "petite_l\u00e8vre_D_",
+      "V_147": "petite_l\u00e8vre_G_",
+      "V_148": "pharynx",
+      "V_23": "arri\u00e8re_de_la_cheville_D_",
+      "V_24": "arri\u00e8re_de_la_cheville_G_",
+      "V_151": "pouce_D_",
+      "V_152": "pouce_G_",
+      "V_158": "scrotum",
+      "V_159": "sein_D_",
+      "V_160": "sein_G_",
+      "V_162": "sous_la_langue",
+      "V_163": "sous_la_machoire",
+      "V_101": "haut_du_thorax",
+      "V_61": "dessus_de_la_langue",
+      "V_153": "pubis",
+      "V_164": "talon_D_",
+      "V_165": "talon_G_",
+      "V_166": "tempe_D_",
+      "V_167": "tempe_G_",
+      "V_168": "testicule_D_",
+      "V_169": "testicule_G_",
+      "V_172": "tibia_D_",
+      "V_173": "tibia_G_",
+      "V_175": "trap\u00e8ze_D_",
+      "V_176": "trap\u00e8ze_G_",
+      "V_174": "trach\u00e9e",
+      "V_177": "triceps_D_",
+      "V_178": "triceps_G_",
+      "V_185": "ur\u00e8tre",
+      "V_186": "vagin",
+      "V_188": "vermillon_D_",
+      "V_189": "vermillon_G_",
+      "V_190": "vestibule"
+    },
+    "datatype": "M"
+  },
+  "E_53": {
+    "E_53": "douleurxx",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_57": {
+    "E_57": "douleurxx_irrad",
+    "Values": {
+      "V_123": "nulle_part",
+      "V_14": "aile_iliaque_D_",
+      "V_15": "aile_iliaque_G_",
+      "V_16": "aine_D_",
+      "V_17": "aine_G_",
+      "V_19": "aisselle_G_",
+      "V_18": "aisselle_D_",
+      "V_20": "amygdale_D_",
+      "V_21": "amygdale_G_",
+      "V_22": "anus",
+      "V_26": "arri\u00e8re_du_cou",
+      "V_25": "arri\u00e8re_de_t\u00eate",
+      "V_30": "biceps_D_",
+      "V_31": "biceps_G_",
+      "V_32": "bouche",
+      "V_33": "cartilage_thyroidien",
+      "V_34": "cheville_D_",
+      "V_35": "cheville_G_",
+      "V_36": "clitoris",
+      "V_37": "coccyx",
+      "V_38": "colonne_cervicale",
+      "V_39": "colonne_dorsale",
+      "V_40": "colonne_lombaire",
+      "V_41": "commissure_D_",
+      "V_42": "commissure_G_",
+      "V_49": "cr\u00eate_iliaque_D_",
+      "V_50": "cr\u00eate_iliaque_G_",
+      "V_51": "cuisse_D_",
+      "V_52": "cuisse_G_",
+      "V_57": "dents_inf\u00e9rieures_D_",
+      "V_58": "dents_inf\u00e9rieures_G_",
+      "V_59": "dents_sup\u00e9rieures_D_",
+      "V_60": "dents_sup\u00e9rieures_G_",
+      "V_67": "doigt_index__D_",
+      "V_68": "doigt_index__G_",
+      "V_69": "doigt_majeur__D_",
+      "V_70": "doigt_majeur__G_",
+      "V_63": "doigt_annulaire__D_",
+      "V_64": "doigt_annulaire__G_",
+      "V_65": "doigt_auriculaire__D_",
+      "V_66": "doigt_auriculaire__G_",
+      "V_62": "dessus_de_t\u00eate",
+      "V_194": "\u00e9paule_D_",
+      "V_195": "\u00e9paule_G_",
+      "V_197": "\u00e9pigastre",
+      "V_27": "avant-bras_D_",
+      "V_28": "avant-bras_G_",
+      "V_76": "face_dorsale_main_D_",
+      "V_77": "face_dorsale_main_G_",
+      "V_72": "face_dorsale_du_pied_D_",
+      "V_73": "face_dorsale_du_pied_G_",
+      "V_74": "face_dorsale_du_poignet_D_",
+      "V_75": "face_dorsale_du_poignet_G_",
+      "V_149": "plante_du_pied_D_",
+      "V_150": "plante_du_pied_G_",
+      "V_80": "face_palmaire_du_poignet_D_",
+      "V_81": "face_palmaire_du_poignet_G_",
+      "V_43": "cot\u00e9_lateral_du_pied_D_",
+      "V_44": "cot\u00e9_lateral_du_pied_G_",
+      "V_82": "fesse_D_",
+      "V_83": "fesse_G_",
+      "V_84": "flanc_D_",
+      "V_85": "flanc_G_",
+      "V_78": "face_palmaire_de_l_avant-bras_D_",
+      "V_79": "face_palmaire_de_l_avant-bras_G_",
+      "V_87": "fosse_iliaque_D_",
+      "V_88": "fosse_iliaque_G_",
+      "V_89": "front",
+      "V_92": "genou_D_",
+      "V_93": "genou_G_",
+      "V_90": "gencive_inf\u00e9rieure",
+      "V_47": "creux_poplit\u00e9_D_",
+      "V_48": "creux_poplit\u00e9_G_",
+      "V_91": "gencive_sup\u00e9rieure",
+      "V_94": "gland",
+      "V_95": "grande_l\u00e8vre_D_",
+      "V_96": "grande_l\u00e8vre_G_",
+      "V_97": "gros_orteil_D_",
+      "V_98": "gros_orteil_G_",
+      "V_99": "hanche_D_",
+      "V_100": "hanche_G_",
+      "V_102": "hymen",
+      "V_103": "hypochondre_D_",
+      "V_104": "hypochondre_G_",
+      "V_105": "ischio_D_",
+      "V_106": "ischio_G_",
+      "V_108": "joue_D_",
+      "V_109": "joue_G_",
+      "V_110": "joue_interne_D_",
+      "V_111": "joue_interne_G_",
+      "V_53": "c\u00f4t\u00e9_du_cou_D_",
+      "V_54": "c\u00f4t\u00e9_du_cou_G_",
+      "V_55": "c\u00f4t\u00e9_du_thorax_D_",
+      "V_56": "c\u00f4t\u00e9_du_thorax_G_",
+      "V_116": "l\u00e8vre_inferieure_D_",
+      "V_117": "l\u00e8vre_sup\u00e9rieure_D_",
+      "V_113": "loge_renale_D_",
+      "V_114": "loge_renale_G_",
+      "V_115": "luette",
+      "V_121": "m\u00e2choire",
+      "V_118": "menton",
+      "V_29": "bas_du_thorax",
+      "V_119": "mollet_D_",
+      "V_120": "mollet_G_",
+      "V_122": "nez",
+      "V_124": "occiput",
+      "V_125": "oeil_D_",
+      "V_126": "oeil_G_",
+      "V_127": "omoplate_D_",
+      "V_128": "omoplate_G_",
+      "V_129": "oreille_D_",
+      "V_130": "oreille_G_",
+      "V_131": "orteil__1__D_",
+      "V_132": "orteil__1__G_",
+      "V_133": "orteil__2__D_",
+      "V_134": "orteil__2__G_",
+      "V_135": "orteil__3__D_",
+      "V_136": "orteil__3__G_",
+      "V_144": "petit_orteil__4__D_",
+      "V_145": "petit_orteil__4__G_",
+      "V_45": "coude_D_",
+      "V_46": "coude_G_",
+      "V_137": "palais",
+      "V_170": "thorax_post\u00e9rieur_D_",
+      "V_171": "thorax_post\u00e9rieur_G_",
+      "V_139": "paroi_vaginale",
+      "V_140": "paroi_vaginale_D_",
+      "V_141": "paroi_vaginale_G_",
+      "V_142": "paume_D_",
+      "V_143": "paume_G_",
+      "V_155": "p\u00e9nis",
+      "V_187": "ventre",
+      "V_146": "petite_l\u00e8vre_D_",
+      "V_147": "petite_l\u00e8vre_G_",
+      "V_148": "pharynx",
+      "V_23": "arri\u00e8re_de_la_cheville_D_",
+      "V_24": "arri\u00e8re_de_la_cheville_G_",
+      "V_151": "pouce_D_",
+      "V_152": "pouce_G_",
+      "V_158": "scrotum",
+      "V_159": "sein_D_",
+      "V_160": "sein_G_",
+      "V_162": "sous_la_langue",
+      "V_163": "sous_la_machoire",
+      "V_101": "haut_du_thorax",
+      "V_61": "dessus_de_la_langue",
+      "V_153": "pubis",
+      "V_164": "talon_D_",
+      "V_165": "talon_G_",
+      "V_166": "tempe_D_",
+      "V_167": "tempe_G_",
+      "V_168": "testicule_D_",
+      "V_169": "testicule_G_",
+      "V_172": "tibia_D_",
+      "V_173": "tibia_G_",
+      "V_175": "trap\u00e8ze_D_",
+      "V_176": "trap\u00e8ze_G_",
+      "V_174": "trach\u00e9e",
+      "V_177": "triceps_D_",
+      "V_178": "triceps_G_",
+      "V_185": "ur\u00e8tre",
+      "V_186": "vagin",
+      "V_188": "vermillon_D_",
+      "V_189": "vermillon_G_",
+      "V_190": "vestibule"
+    },
+    "datatype": "M"
+  },
+  "E_54": {
+    "E_54": "douleurxx_carac",
+    "Values": {
+      "V_11": "NA",
+      "V_71": "d\u00e9chirante",
+      "V_112": "lancinante_/_choc_\u00e9lectrique",
+      "V_154": "p\u00e9nible",
+      "V_161": "sensible",
+      "V_179": "un_coup_de_couteau",
+      "V_180": "un_tiraillement",
+      "V_181": "une_br\u00fblure_ou_chaleur",
+      "V_182": "une_crampe",
+      "V_183": "une_lourdeur_ou_serrement",
+      "V_184": "une_pulsation",
+      "V_191": "violente",
+      "V_192": "vive",
+      "V_193": "\u00e9coeurante",
+      "V_196": "\u00e9peurante",
+      "V_198": "\u00e9puisante"
+    },
+    "datatype": "M"
+  },
+  "E_59": {
+    "E_59": "douleurxx_soudain",
+    "Values": {},
+    "datatype": "C"
+  },
+  "E_56": {
+    "E_56": "douleurxx_intens",
+    "Values": {},
+    "datatype": "C"
+  },
+  "E_58": {
+    "E_58": "douleurxx_precis",
+    "Values": {},
+    "datatype": "C"
+  },
+  "E_159": {
+    "E_159": "pdc",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_133": {
+    "E_133": "lesions_peau_endroitducorps",
+    "Values": {
+      "V_123": "nulle_part",
+      "V_14": "aile_iliaque_D_",
+      "V_15": "aile_iliaque_G_",
+      "V_16": "aine_D_",
+      "V_17": "aine_G_",
+      "V_19": "aisselle_G_",
+      "V_18": "aisselle_D_",
+      "V_20": "amygdale_D_",
+      "V_21": "amygdale_G_",
+      "V_22": "anus",
+      "V_26": "arri\u00e8re_du_cou",
+      "V_25": "arri\u00e8re_de_t\u00eate",
+      "V_30": "biceps_D_",
+      "V_31": "biceps_G_",
+      "V_32": "bouche",
+      "V_33": "cartilage_thyroidien",
+      "V_34": "cheville_D_",
+      "V_35": "cheville_G_",
+      "V_36": "clitoris",
+      "V_37": "coccyx",
+      "V_38": "colonne_cervicale",
+      "V_39": "colonne_dorsale",
+      "V_40": "colonne_lombaire",
+      "V_41": "commissure_D_",
+      "V_42": "commissure_G_",
+      "V_49": "cr\u00eate_iliaque_D_",
+      "V_50": "cr\u00eate_iliaque_G_",
+      "V_51": "cuisse_D_",
+      "V_52": "cuisse_G_",
+      "V_57": "dents_inf\u00e9rieures_D_",
+      "V_58": "dents_inf\u00e9rieures_G_",
+      "V_59": "dents_sup\u00e9rieures_D_",
+      "V_60": "dents_sup\u00e9rieures_G_",
+      "V_67": "doigt_index__D_",
+      "V_68": "doigt_index__G_",
+      "V_69": "doigt_majeur__D_",
+      "V_70": "doigt_majeur__G_",
+      "V_63": "doigt_annulaire__D_",
+      "V_64": "doigt_annulaire__G_",
+      "V_65": "doigt_auriculaire__D_",
+      "V_66": "doigt_auriculaire__G_",
+      "V_62": "dessus_de_t\u00eate",
+      "V_194": "\u00e9paule_D_",
+      "V_195": "\u00e9paule_G_",
+      "V_197": "\u00e9pigastre",
+      "V_27": "avant-bras_D_",
+      "V_28": "avant-bras_G_",
+      "V_76": "face_dorsale_main_D_",
+      "V_77": "face_dorsale_main_G_",
+      "V_72": "face_dorsale_du_pied_D_",
+      "V_73": "face_dorsale_du_pied_G_",
+      "V_74": "face_dorsale_du_poignet_D_",
+      "V_75": "face_dorsale_du_poignet_G_",
+      "V_149": "plante_du_pied_D_",
+      "V_150": "plante_du_pied_G_",
+      "V_80": "face_palmaire_du_poignet_D_",
+      "V_81": "face_palmaire_du_poignet_G_",
+      "V_43": "cot\u00e9_lateral_du_pied_D_",
+      "V_44": "cot\u00e9_lateral_du_pied_G_",
+      "V_82": "fesse_D_",
+      "V_83": "fesse_G_",
+      "V_84": "flanc_D_",
+      "V_85": "flanc_G_",
+      "V_78": "face_palmaire_de_l_avant-bras_D_",
+      "V_79": "face_palmaire_de_l_avant-bras_G_",
+      "V_87": "fosse_iliaque_D_",
+      "V_88": "fosse_iliaque_G_",
+      "V_89": "front",
+      "V_92": "genou_D_",
+      "V_93": "genou_G_",
+      "V_90": "gencive_inf\u00e9rieure",
+      "V_47": "creux_poplit\u00e9_D_",
+      "V_48": "creux_poplit\u00e9_G_",
+      "V_91": "gencive_sup\u00e9rieure",
+      "V_94": "gland",
+      "V_95": "grande_l\u00e8vre_D_",
+      "V_96": "grande_l\u00e8vre_G_",
+      "V_97": "gros_orteil_D_",
+      "V_98": "gros_orteil_G_",
+      "V_99": "hanche_D_",
+      "V_100": "hanche_G_",
+      "V_102": "hymen",
+      "V_103": "hypochondre_D_",
+      "V_104": "hypochondre_G_",
+      "V_105": "ischio_D_",
+      "V_106": "ischio_G_",
+      "V_108": "joue_D_",
+      "V_109": "joue_G_",
+      "V_110": "joue_interne_D_",
+      "V_111": "joue_interne_G_",
+      "V_53": "c\u00f4t\u00e9_du_cou_D_",
+      "V_54": "c\u00f4t\u00e9_du_cou_G_",
+      "V_55": "c\u00f4t\u00e9_du_thorax_D_",
+      "V_56": "c\u00f4t\u00e9_du_thorax_G_",
+      "V_116": "l\u00e8vre_inferieure_D_",
+      "V_117": "l\u00e8vre_sup\u00e9rieure_D_",
+      "V_113": "loge_renale_D_",
+      "V_114": "loge_renale_G_",
+      "V_115": "luette",
+      "V_121": "m\u00e2choire",
+      "V_118": "menton",
+      "V_29": "bas_du_thorax",
+      "V_119": "mollet_D_",
+      "V_120": "mollet_G_",
+      "V_122": "nez",
+      "V_124": "occiput",
+      "V_125": "oeil_D_",
+      "V_126": "oeil_G_",
+      "V_127": "omoplate_D_",
+      "V_128": "omoplate_G_",
+      "V_129": "oreille_D_",
+      "V_130": "oreille_G_",
+      "V_131": "orteil__1__D_",
+      "V_132": "orteil__1__G_",
+      "V_133": "orteil__2__D_",
+      "V_134": "orteil__2__G_",
+      "V_135": "orteil__3__D_",
+      "V_136": "orteil__3__G_",
+      "V_144": "petit_orteil__4__D_",
+      "V_145": "petit_orteil__4__G_",
+      "V_45": "coude_D_",
+      "V_46": "coude_G_",
+      "V_137": "palais",
+      "V_170": "thorax_post\u00e9rieur_D_",
+      "V_171": "thorax_post\u00e9rieur_G_",
+      "V_139": "paroi_vaginale",
+      "V_140": "paroi_vaginale_D_",
+      "V_141": "paroi_vaginale_G_",
+      "V_142": "paume_D_",
+      "V_143": "paume_G_",
+      "V_155": "p\u00e9nis",
+      "V_187": "ventre",
+      "V_146": "petite_l\u00e8vre_D_",
+      "V_147": "petite_l\u00e8vre_G_",
+      "V_148": "pharynx",
+      "V_23": "arri\u00e8re_de_la_cheville_D_",
+      "V_24": "arri\u00e8re_de_la_cheville_G_",
+      "V_151": "pouce_D_",
+      "V_152": "pouce_G_",
+      "V_158": "scrotum",
+      "V_159": "sein_D_",
+      "V_160": "sein_G_",
+      "V_162": "sous_la_langue",
+      "V_163": "sous_la_machoire",
+      "V_101": "haut_du_thorax",
+      "V_61": "dessus_de_la_langue",
+      "V_153": "pubis",
+      "V_164": "talon_D_",
+      "V_165": "talon_G_",
+      "V_166": "tempe_D_",
+      "V_167": "tempe_G_",
+      "V_168": "testicule_D_",
+      "V_169": "testicule_G_",
+      "V_172": "tibia_D_",
+      "V_173": "tibia_G_",
+      "V_175": "trap\u00e8ze_D_",
+      "V_176": "trap\u00e8ze_G_",
+      "V_174": "trach\u00e9e",
+      "V_177": "triceps_D_",
+      "V_178": "triceps_G_",
+      "V_185": "ur\u00e8tre",
+      "V_186": "vagin",
+      "V_188": "vermillon_D_",
+      "V_189": "vermillon_G_",
+      "V_190": "vestibule"
+    },
+    "datatype": "M"
+  },
+  "E_129": {
+    "E_129": "lesions_peau",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_130": {
+    "E_130": "lesions_peau_couleur",
+    "Values": {
+      "V_11": "NA",
+      "V_86": "foncee",
+      "V_107": "jaune",
+      "V_138": "pale",
+      "V_156": "rose",
+      "V_157": "rouge"
+    },
+    "datatype": "C"
+  },
+  "E_134": {
+    "E_134": "lesions_peau_intens",
+    "Values": {},
+    "datatype": "C"
+  },
+  "E_132": {
+    "E_132": "lesions_peau_elevee",
+    "Values": {},
+    "datatype": "C"
+  },
+  "E_136": {
+    "E_136": "lesions_peau_prurit",
+    "Values": {},
+    "datatype": "C"
+  },
+  "E_135": {
+    "E_135": "lesions_peau_plusqu1cm",
+    "Values": {
+      "V_10": "N",
+      "V_12": "O"
+    },
+    "datatype": "C"
+  },
+  "E_131": {
+    "E_131": "lesions_peau_desquame",
+    "Values": {
+      "V_10": "N",
+      "V_12": "O"
+    },
+    "datatype": "C"
+  },
+  "E_154": {
+    "E_154": "pale",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_155": {
+    "E_155": "palpit",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_210": {
+    "E_210": "vo_sg",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_140": {
+    "E_140": "melena",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_51": {
+    "E_51": "diarrhee",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_75": {
+    "E_75": "etouff",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_89": {
+    "E_89": "fatig_mod",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_114": {
+    "E_114": "irritable",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_82": {
+    "E_82": "faible",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_148": {
+    "E_148": "nausee",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_94": {
+    "E_94": "friss",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_220": {
+    "E_220": "ww_respi",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_161": {
+    "E_161": "perte_appet",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_179": {
+    "E_179": "rectorragie",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_162": {
+    "E_162": "perte_poids",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_173": {
+    "E_173": "pyrosis",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_33": {
+    "E_33": "bw_bending",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_218": {
+    "E_218": "ww_effort",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_93": {
+    "E_93": "footnumb",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_66": {
+    "E_66": "dyspn",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_163": {
+    "E_163": "pertes_vag",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_30": {
+    "E_30": "ballon_abdo",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_127": {
+    "E_127": "larmes",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_181": {
+    "E_181": "rhino_clair",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_88": {
+    "E_88": "fatig_ext",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_43": {
+    "E_43": "convulsion",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_156": {
+    "E_156": "paralysie_visage",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_144": {
+    "E_144": "msk_dlr",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_216": {
+    "E_216": "ww_bouger",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_201": {
+    "E_201": "toux",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_217": {
+    "E_217": "ww_dd",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_215": {
+    "E_215": "ww_bouffe",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_64": {
+    "E_64": "dysp_effort",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_96": {
+    "E_96": "gain_poids",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_16": {
+    "E_16": "anxiete_s",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_50": {
+    "E_50": "diaph",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_97": {
+    "E_97": "gorge_dlr",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_9": {
+    "E_9": "adp_dlr",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_76": {
+    "E_76": "etourdissement",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_102": {
+    "E_102": "hta",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_65": {
+    "E_65": "dysphagie",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_74": {
+    "E_74": "erytheme_occ",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_205": {
+    "E_205": "trismus",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_63": {
+    "E_63": "dysarthrie",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_128": {
+    "E_128": "laryngospasme",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_190": {
+    "E_190": "sialorhee",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_39": {
+    "E_39": "confusion",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_212": {
+    "E_212": "volume_parole",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_206": {
+    "E_206": "ulc\u00e8res_bouche",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_52": {
+    "E_52": "diplopie",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_203": {
+    "E_203": "toux_sev",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_38": {
+    "E_38": "claud_m\u00e2choire",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_172": {
+    "E_172": "ptose",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_84": {
+    "E_84": "faiblesse_msmi",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_90": {
+    "E_90": "fatigabilit\u00e9_msk",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_211": {
+    "E_211": "vo_violent",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_166": {
+    "E_166": "posttus_emesis",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_112": {
+    "E_112": "insp_siffla",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_178": {
+    "E_178": "rds_sg",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_152": {
+    "E_152": "oedeme_endroitducorps",
+    "Values": {
+      "V_123": "nulle_part",
+      "V_14": "aile_iliaque_D_",
+      "V_15": "aile_iliaque_G_",
+      "V_16": "aine_D_",
+      "V_17": "aine_G_",
+      "V_19": "aisselle_G_",
+      "V_18": "aisselle_D_",
+      "V_20": "amygdale_D_",
+      "V_21": "amygdale_G_",
+      "V_22": "anus",
+      "V_26": "arri\u00e8re_du_cou",
+      "V_25": "arri\u00e8re_de_t\u00eate",
+      "V_30": "biceps_D_",
+      "V_31": "biceps_G_",
+      "V_32": "bouche",
+      "V_33": "cartilage_thyroidien",
+      "V_34": "cheville_D_",
+      "V_35": "cheville_G_",
+      "V_36": "clitoris",
+      "V_37": "coccyx",
+      "V_38": "colonne_cervicale",
+      "V_39": "colonne_dorsale",
+      "V_40": "colonne_lombaire",
+      "V_41": "commissure_D_",
+      "V_42": "commissure_G_",
+      "V_49": "cr\u00eate_iliaque_D_",
+      "V_50": "cr\u00eate_iliaque_G_",
+      "V_51": "cuisse_D_",
+      "V_52": "cuisse_G_",
+      "V_57": "dents_inf\u00e9rieures_D_",
+      "V_58": "dents_inf\u00e9rieures_G_",
+      "V_59": "dents_sup\u00e9rieures_D_",
+      "V_60": "dents_sup\u00e9rieures_G_",
+      "V_67": "doigt_index__D_",
+      "V_68": "doigt_index__G_",
+      "V_69": "doigt_majeur__D_",
+      "V_70": "doigt_majeur__G_",
+      "V_63": "doigt_annulaire__D_",
+      "V_64": "doigt_annulaire__G_",
+      "V_65": "doigt_auriculaire__D_",
+      "V_66": "doigt_auriculaire__G_",
+      "V_62": "dessus_de_t\u00eate",
+      "V_194": "\u00e9paule_D_",
+      "V_195": "\u00e9paule_G_",
+      "V_197": "\u00e9pigastre",
+      "V_27": "avant-bras_D_",
+      "V_28": "avant-bras_G_",
+      "V_76": "face_dorsale_main_D_",
+      "V_77": "face_dorsale_main_G_",
+      "V_72": "face_dorsale_du_pied_D_",
+      "V_73": "face_dorsale_du_pied_G_",
+      "V_74": "face_dorsale_du_poignet_D_",
+      "V_75": "face_dorsale_du_poignet_G_",
+      "V_149": "plante_du_pied_D_",
+      "V_150": "plante_du_pied_G_",
+      "V_80": "face_palmaire_du_poignet_D_",
+      "V_81": "face_palmaire_du_poignet_G_",
+      "V_43": "cot\u00e9_lateral_du_pied_D_",
+      "V_44": "cot\u00e9_lateral_du_pied_G_",
+      "V_82": "fesse_D_",
+      "V_83": "fesse_G_",
+      "V_84": "flanc_D_",
+      "V_85": "flanc_G_",
+      "V_78": "face_palmaire_de_l_avant-bras_D_",
+      "V_79": "face_palmaire_de_l_avant-bras_G_",
+      "V_87": "fosse_iliaque_D_",
+      "V_88": "fosse_iliaque_G_",
+      "V_89": "front",
+      "V_92": "genou_D_",
+      "V_93": "genou_G_",
+      "V_90": "gencive_inf\u00e9rieure",
+      "V_47": "creux_poplit\u00e9_D_",
+      "V_48": "creux_poplit\u00e9_G_",
+      "V_91": "gencive_sup\u00e9rieure",
+      "V_94": "gland",
+      "V_95": "grande_l\u00e8vre_D_",
+      "V_96": "grande_l\u00e8vre_G_",
+      "V_97": "gros_orteil_D_",
+      "V_98": "gros_orteil_G_",
+      "V_99": "hanche_D_",
+      "V_100": "hanche_G_",
+      "V_102": "hymen",
+      "V_103": "hypochondre_D_",
+      "V_104": "hypochondre_G_",
+      "V_105": "ischio_D_",
+      "V_106": "ischio_G_",
+      "V_108": "joue_D_",
+      "V_109": "joue_G_",
+      "V_110": "joue_interne_D_",
+      "V_111": "joue_interne_G_",
+      "V_53": "c\u00f4t\u00e9_du_cou_D_",
+      "V_54": "c\u00f4t\u00e9_du_cou_G_",
+      "V_55": "c\u00f4t\u00e9_du_thorax_D_",
+      "V_56": "c\u00f4t\u00e9_du_thorax_G_",
+      "V_116": "l\u00e8vre_inferieure_D_",
+      "V_117": "l\u00e8vre_sup\u00e9rieure_D_",
+      "V_113": "loge_renale_D_",
+      "V_114": "loge_renale_G_",
+      "V_115": "luette",
+      "V_121": "m\u00e2choire",
+      "V_118": "menton",
+      "V_29": "bas_du_thorax",
+      "V_119": "mollet_D_",
+      "V_120": "mollet_G_",
+      "V_122": "nez",
+      "V_124": "occiput",
+      "V_125": "oeil_D_",
+      "V_126": "oeil_G_",
+      "V_127": "omoplate_D_",
+      "V_128": "omoplate_G_",
+      "V_129": "oreille_D_",
+      "V_130": "oreille_G_",
+      "V_131": "orteil__1__D_",
+      "V_132": "orteil__1__G_",
+      "V_133": "orteil__2__D_",
+      "V_134": "orteil__2__G_",
+      "V_135": "orteil__3__D_",
+      "V_136": "orteil__3__G_",
+      "V_144": "petit_orteil__4__D_",
+      "V_145": "petit_orteil__4__G_",
+      "V_45": "coude_D_",
+      "V_46": "coude_G_",
+      "V_137": "palais",
+      "V_170": "thorax_post\u00e9rieur_D_",
+      "V_171": "thorax_post\u00e9rieur_G_",
+      "V_139": "paroi_vaginale",
+      "V_140": "paroi_vaginale_D_",
+      "V_141": "paroi_vaginale_G_",
+      "V_142": "paume_D_",
+      "V_143": "paume_G_",
+      "V_155": "p\u00e9nis",
+      "V_187": "ventre",
+      "V_146": "petite_l\u00e8vre_D_",
+      "V_147": "petite_l\u00e8vre_G_",
+      "V_148": "pharynx",
+      "V_23": "arri\u00e8re_de_la_cheville_D_",
+      "V_24": "arri\u00e8re_de_la_cheville_G_",
+      "V_151": "pouce_D_",
+      "V_152": "pouce_G_",
+      "V_158": "scrotum",
+      "V_159": "sein_D_",
+      "V_160": "sein_G_",
+      "V_162": "sous_la_langue",
+      "V_163": "sous_la_machoire",
+      "V_101": "haut_du_thorax",
+      "V_61": "dessus_de_la_langue",
+      "V_153": "pubis",
+      "V_164": "talon_D_",
+      "V_165": "talon_G_",
+      "V_166": "tempe_D_",
+      "V_167": "tempe_G_",
+      "V_168": "testicule_D_",
+      "V_169": "testicule_G_",
+      "V_172": "tibia_D_",
+      "V_173": "tibia_G_",
+      "V_175": "trap\u00e8ze_D_",
+      "V_176": "trap\u00e8ze_G_",
+      "V_174": "trach\u00e9e",
+      "V_177": "triceps_D_",
+      "V_178": "triceps_G_",
+      "V_185": "ur\u00e8tre",
+      "V_186": "vagin",
+      "V_188": "vermillon_D_",
+      "V_189": "vermillon_G_",
+      "V_190": "vestibule"
+    },
+    "datatype": "M"
+  },
+  "E_151": {
+    "E_151": "oedeme",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_45": {
+    "E_45": "crach_sg",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_194": {
+    "E_194": "stridor",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_83": {
+    "E_83": "faiblesse faciale",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_157": {
+    "E_157": "paresthesies_bilat",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_176": {
+    "E_176": "rds_paralys_gen",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_42": {
+    "E_42": "contact_allergie",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_214": {
+    "E_214": "wheez",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_150": {
+    "E_150": "obstipation",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_32": {
+    "E_32": "boire_ped",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_221": {
+    "E_221": "ww_valsalva",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_202": {
+    "E_202": "toux_Aboy",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_219": {
+    "E_219": "ww_nuit",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_196": {
+    "E_196": "surg1",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_170": {
+    "E_170": "prurit_occ",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_77": {
+    "E_77": "expecto",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_13": {
+    "E_13": "angor_accelere",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_14": {
+    "E_14": "angor_repos",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_169": {
+    "E_169": "prurit_nasal",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_177": {
+    "E_177": "rds_paresthesie_gen",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_175": {
+    "E_175": "rds_deg",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_174": {
+    "E_174": "rds_anorexie",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_145": {
+    "E_145": "m\u00e9norr",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_92": {
+    "E_92": "flushing",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_192": {
+    "E_192": "spasme_trapeze",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_188": {
+    "E_188": "selles_pale",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_164": {
+    "E_164": "pls_irreg",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_193": {
+    "E_193": "spasmes_msk",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_168": {
+    "E_168": "protu_langue",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_180": {
+    "E_180": "regard_d\u00e9vi\u00e9",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_67": {
+    "E_67": "dyspn_noct",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_78": {
+    "E_78": "f10.129",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_146": {
+    "E_146": "naco",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_171": {
+    "E_171": "psy_depers",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_111": {
+    "E_111": "impression_mort",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_182": {
+    "E_182": "rhino_pur",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_103": {
+    "E_103": "hyponos",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_23": {
+    "E_23": "apnee",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_105": {
+    "E_105": "i25.1",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_108": {
+    "E_108": "i73.9",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_104": {
+    "E_104": "i10",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_79": {
+    "E_79": "f17.210",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_71": {
+    "E_71": "e78.5",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_41": {
+    "E_41": "contact",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_100": {
+    "E_100": "horm1",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_69": {
+    "E_69": "e10_e11",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_167": {
+    "E_167": "preg1",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_115": {
+    "E_115": "itss_risque",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_70": {
+    "E_70": "e66",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_10": {
+    "E_10": "ains",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_165": {
+    "E_165": "pneumothorax",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_8": {
+    "E_8": "Z99.2",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_25": {
+    "E_25": "atcd_cluster",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_184": {
+    "E_184": "rx_vasodil",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_185": {
+    "E_185": "s09.90",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_99": {
+    "E_99": "histfammigraine",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_107": {
+    "E_107": "i60-i69",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_226": {
+    "E_226": "z84.89",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_62": {
+    "E_62": "drogues_stimul",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_49": {
+    "E_49": "dayc",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_95": {
+    "E_95": "g20",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_204": {
+    "E_204": "trav1",
+    "Values": {
+      "V_10": "N",
+      "V_0": "AfriqN",
+      "V_1": "AfriqO",
+      "V_2": "AfriqSS",
+      "V_3": "AmerC",
+      "V_4": "AmerN",
+      "V_5": "AmerS",
+      "V_6": "Asie",
+      "V_7": "AsieSSE",
+      "V_8": "Cara",
+      "V_9": "Euro",
+      "V_13": "Ocea"
+    },
+    "datatype": "C"
+  },
+  "E_37": {
+    "E_37": "cancer_m\u00e9ta",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_153": {
+    "E_153": "osteoporose",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_124": {
+    "E_124": "j45",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_98": {
+    "E_98": "hernie_hiatale",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_116": {
+    "E_116": "j06.9",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_48": {
+    "E_48": "crowd",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_2": {
+    "E_2": "HIV",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_227": {
+    "E_227": "z92.25",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_61": {
+    "E_61": "drogues_IV",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_47": {
+    "E_47": "crohn_cu",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_27": {
+    "E_27": "atcd_its",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_143": {
+    "E_143": "move",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_191": {
+    "E_191": "smokingpast",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_208": {
+    "E_208": "v85.0",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_126": {
+    "E_126": "k74",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_189": {
+    "E_189": "sex_vih",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_7": {
+    "E_7": "Mauv_aliment",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_24": {
+    "E_24": "atcd_anem",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_26": {
+    "E_26": "atcd_fam_anem",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_113": {
+    "E_113": "irc",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_160": {
+    "E_160": "perinatality",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_28": {
+    "E_28": "atcdfam_mg",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_20": {
+    "E_20": "ap_par",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_80": {
+    "E_80": "f32",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_40": {
+    "E_40": "cont_coq",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_0": {
+    "E_0": "B34.9",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_1": {
+    "E_1": "H6690",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_34": {
+    "E_34": "c00-d48",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_209": {
+    "E_209": "vaccination",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_139": {
+    "E_139": "malf_cardiaque",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_19": {
+    "E_19": "ap_hypert4",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_31": {
+    "E_31": "bode",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_22": {
+    "E_22": "ap_valve",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_60": {
+    "E_60": "drink_energie",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_35": {
+    "E_35": "cafe",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_213": {
+    "E_213": "wakeup",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_12": {
+    "E_12": "allergie_sev",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_44": {
+    "E_44": "cortico",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_4": {
+    "E_4": "J05.0",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_81": {
+    "E_81": "f41.9",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_109": {
+    "E_109": "i80",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_110": {
+    "E_110": "immob1",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_17": {
+    "E_17": "ap_asian",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_18": {
+    "E_18": "ap_fk",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_118": {
+    "E_118": "j17_j18",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_123": {
+    "E_123": "j44_j42",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_207": {
+    "E_207": "urban1",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_86": {
+    "E_86": "fam_atopie",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_87": {
+    "E_87": "fam_j45",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_141": {
+    "E_141": "menarche_hat",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_11": {
+    "E_11": "allait_prol",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_186": {
+    "E_186": "sahs",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_106": {
+    "E_106": "i50",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_158": {
+    "E_158": "patho_endo",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_187": {
+    "E_187": "scombroide",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_6": {
+    "E_6": "K86.1",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_125": {
+    "E_125": "k21",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_21": {
+    "E_21": "ap_pneumothorax",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_222": {
+    "E_222": "z77.22",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_15": {
+    "E_15": "antipsy_r\u00e9cent",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_147": {
+    "E_147": "nau_psy_recent",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_137": {
+    "E_137": "lymphoed\u00e8me",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_149": {
+    "E_149": "norvasc",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_197": {
+    "E_197": "synd_nephro",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_3": {
+    "E_3": "I30",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_29": {
+    "E_29": "atcdpsyfam",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_225": {
+    "E_225": "z82.49",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_73": {
+    "E_73": "ebolacase",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_138": {
+    "E_138": "m79.7",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_101": {
+    "E_101": "hosptisasm",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_46": {
+    "E_46": "criseasthm",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_119": {
+    "E_119": "j32",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_72": {
+    "E_72": "eampoc1",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_198": {
+    "E_198": "tagri",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_200": {
+    "E_200": "tmine",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_199": {
+    "E_199": "tconst",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_121": {
+    "E_121": "j34.2",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_120": {
+    "E_120": "j33",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_142": {
+    "E_142": "momasthma",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_195": {
+    "E_195": "suburb",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_183": {
+    "E_183": "rural",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_224": {
+    "E_224": "z80.1",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_223": {
+    "E_223": "z80.0",
+    "Values": {},
+    "datatype": "B"
+  },
+  "E_5": {
+    "E_5": "J81",
+    "Values": {},
+    "datatype": "B"
+  }
+}
