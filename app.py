@@ -81,7 +81,7 @@ def chat(inp, role="user"):
     return reply_content
 @app.route('/')
 def home():
-    return jsonify({'error1':"hello"})
+    return jsonify({'error1':"hello212"})
 @app.route('/chat', methods=['POST'])
 def chat_api():
     user_input = request.json.get("user_input")
