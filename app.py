@@ -79,7 +79,9 @@ def chat(inp, role="user"):
     reply_content = completion.choices[0].message.content
     message_history.append({"role": "assistant", "content": f"{reply_content}"})
     return reply_content
-
+@app.route('/')
+def home():
+    return jsonify({'error1':"hello"})
 @app.route('/chat', methods=['POST'])
 def chat_api():
     user_input = request.json.get("user_input")
