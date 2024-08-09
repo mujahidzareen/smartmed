@@ -23,11 +23,11 @@ complition_history = []
 message_for_extraction = []
 
 # Load data and models
-with open("final draft/release_evidences.json", "r") as file:
+with open("release_evidences.json", "r") as file:
     data = json.load(file)
 
-merged_evidences = json.load(open('final draft/merged_evidences.json'))
-merged_conditions = json.load(open('final draft/merged_conditions.json'))
+merged_evidences = json.load(open('merged_evidences.json'))
+merged_conditions = json.load(open('merged_conditions.json'))
 
 class ExtendedLabelEncoder(LabelEncoder):
     def __init__(self, *args, **kwargs):
@@ -41,8 +41,8 @@ class ExtendedLabelEncoder(LabelEncoder):
 
 def load_model_and_encoder():
     try:
-        pipeline = joblib.load('final draft/pathology_model.pkl')
-        encoder_sex = joblib.load('final draft/encoder_sex.pkl')
+        pipeline = joblib.load('pathology_model.pkl')
+        encoder_sex = joblib.load('encoder_sex.pkl')
     except FileNotFoundError:
         print("Model or encoder file not found. Please ensure the files are saved correctly.")
         return None, None
