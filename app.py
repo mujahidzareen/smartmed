@@ -9,7 +9,6 @@ from openai import OpenAI
 import prompts
 import os
 from dotenv import load_dotenv
-import pickle
 load_dotenv()
 
 app = Flask(__name__)
