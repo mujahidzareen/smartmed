@@ -9,7 +9,7 @@ from openai import OpenAI
 import prompts
 import os
 from dotenv import load_dotenv
-
+import pickle
 load_dotenv()
 
 app = Flask(__name__)
@@ -29,6 +29,18 @@ with open("release_evidences.json", "r") as file:
 merged_evidences = json.load(open('merged_evidences.json'))
 merged_conditions = json.load(open('merged_conditions.json'))
 
+# class ExtendedLabelEncoder(LabelEncoder):
+#     def __init__(self, *args, **kwargs):
+#         super().__init__(*args, **kwargs)
+    
+#     def transform(self, y):
+#         unseen_labels = set(y) - set(self.classes_)
+#         if unseen_labels:
+#             self.classes_ = np.append(self.classes_, list(unseen_labels))
+#         return super().transform(y)
+
+
+# Register ExtendedLabelEncoder class before unpickling
 class ExtendedLabelEncoder(LabelEncoder):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -39,14 +51,33 @@ class ExtendedLabelEncoder(LabelEncoder):
             self.classes_ = np.append(self.classes_, list(unseen_labels))
         return super().transform(y)
 
+# Register the class
+def custom_unpickler():
+    return ExtendedLabelEncoder
+
 def load_model_and_encoder():
     try:
+        # Register the custom class for unpickling
+        with open('encoder_sex.pkl', 'rb') as f:
+            encoder_sex = joblib.load(f, custom_unpickler=custom_unpickler)
+        
         pipeline = joblib.load('pathology_model.pkl')
-        encoder_sex = joblib.load('encoder_sex.pkl')
     except FileNotFoundError:
         print("Model or encoder file not found. Please ensure the files are saved correctly.")
         return None, None
+    except AttributeError as e:
+        print(f"Unpickling error: {e}")
+        return None, None
     return pipeline, encoder_sex
+
+# def load_model_and_encoder():
+#     try:
+#         pipeline = joblib.load('pathology_model.pkl')
+#         encoder_sex = joblib.load('encoder_sex.pkl')
+#     except FileNotFoundError:
+#         print("Model or encoder file not found. Please ensure the files are saved correctly.")
+#         return None, None
+#     return pipeline, encoder_sex
 
 def predict_pathology(age, sex, symptoms, initial_evidence):
     pipeline, encoder_sex = load_model_and_encoder()
