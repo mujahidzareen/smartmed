@@ -82,11 +82,11 @@ def chat(inp, role="user"):
 @app.route('/')
 def home():
     return jsonify({'error1':"hello smartmed"})
-@app.route('/chat', methods=['GET'])
+@app.route('/chat', methods=['POST'])
 def chat_api():
-    user_input = request.args.get("user_input")
-    # user_input = request.json.get("user_input")
-    # content = request.json
+    # user_input = request.args.get("user_input")
+    user_input = request.json.get("user_input")
+    content = request.json
     
     if user_input == "KINDLY PROVIDE THE OUTPUT":
         message_for_extraction.append(chat(user_input))
