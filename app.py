@@ -82,7 +82,7 @@ def chat(inp, role="user"):
 @app.route('/')
 def home():
     return jsonify({'error1':"hello smartmed"})
-@app.route('/chat', methods=['POST'])
+@app.route('/chat', methods=['GET'])
 def chat_api():
     user_input = request.args.get("user_input")
     # user_input = request.json.get("user_input")
