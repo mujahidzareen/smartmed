@@ -6,4 +6,3 @@ numpy
 openai
 python-dotenv
 Gunicorn
-pickle
