@@ -8,7 +8,9 @@ import numpy as np
 from openai import OpenAI
 import prompts
 import os
-from dotenv import load_dotenv
+import time
+from openai import APITimeoutError, RateLimitError, InternalServerError,APIConnectionError
+import logging
 load_dotenv()
 
 app = Flask(__name__)
