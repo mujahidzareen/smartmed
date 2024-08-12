@@ -6,3 +6,4 @@ numpy
 openai
 python-dotenv
 Gunicorn
+logging
