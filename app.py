@@ -67,17 +67,27 @@ def predict_pathology(age, sex, symptoms, initial_evidence):
     prediction = pipeline.predict(user_data)
     return prediction[0]
 
-def chat(inp, role="user"):
+def chat(inp, role="user", max_retries=3, initial_wait=1):
     message_history.append({"role": role, "content": f"{inp}"})
-    completion = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=message_history,
-        max_tokens=200,
-    )
-    complition_history.append(completion)
-    reply_content = completion.choices[0].message.content
-    message_history.append({"role": "assistant", "content": f"{reply_content}"})
-    return reply_content
+    
+    for attempt in range(max_retries):
+        try:
+            completion = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=message_history,
+                max_tokens=200,
+            )
+            complition_history.append(completion)
+            reply_content = completion.choices[0].message.content
+            message_history.append({"role": "assistant", "content": f"{reply_content}"})
+            return reply_content
+        except (APITimeoutError, RateLimitError, InternalServerError,APIConnectionError) as e:
+            if attempt == max_retries - 1:
+                raise Exception(f"Failed to get response from chat API after {max_retries} attempts: {str(e)}")
+            wait_time = initial_wait * (2 ** attempt)
+            print(f"API error occurred. Retrying in {wait_time} seconds...")
+            time.sleep(wait_time)
+
 @app.route('/')
 def home():
     return jsonify({'error1':"hello smartmed"})
@@ -88,54 +98,73 @@ def chat_api():
     content = request.json
     
     if user_input == "KINDLY PROVIDE THE OUTPUT":
-        message_for_extraction.append(chat(user_input))
+        try:
+            message_for_extraction.append(chat(user_input))
         
-        # Extract evidence and make prediction
-        text = message_for_extraction[-1]
+            # Extract evidence and make prediction
+            text = message_for_extraction[-1]
+
+
         
-        # Extract evidence
-        evidence_pattern = r'evidence = \[(.*?)\]'
-        evidence_matches = re.findall(evidence_pattern, text, re.DOTALL)
-        evidence = re.findall(r'"(E_\d+(_@_\d+|_@_V_\d+)?)"', evidence_matches[0])
-        evidence = [match[0] for match in evidence]
+            # Regular expression to match the evidences list
+            evidences_pattern = r"evidences\s*=\s*\[(.*?)\]"
+            evidences_match = re.search(evidences_pattern, text, re.DOTALL)
 
-        # Extract initial_evidence
-        initial_evidence_pattern = r'initial_evidence = "(E_\d+)"'
-        initial_evidence = re.findall(initial_evidence_pattern, text)[0]
-
-        converted_initial_evidence = merged_evidences[initial_evidence][initial_evidence]
-
-        symptoms = []
-        for row in evidence:
-            splitarray = row.split('_@_')
-            if len(splitarray) == 2 and "V" in splitarray[1]:
-                Ev = splitarray[0]
-                Va = splitarray[1]
-                symptoms.append(f"{merged_evidences[Ev][Ev]}_@_{merged_evidences[Ev]['Values'][Va]}")
-            elif len(splitarray) == 2:
-                Ev = splitarray[0]
-                symptoms.append(f"{merged_evidences[Ev][Ev]}_@_{splitarray[1]}")
+            # Regular expression to match the initial evidence
+            initial_evidence_pattern = r"initial_evidence\s*=\s*\"(.*?)\""
+            initial_evidence_match = re.search(initial_evidence_pattern, text)
+            if evidences_match:
+                # Extract the evidences list and clean it up
+                evidences_str = evidences_match.group(1).strip()
+                evidence = re.findall(r'"(.*?)"', evidences_str)
             else:
-                Ev = splitarray[0]
-                symptoms.append(f"{merged_evidences[Ev][Ev]}")
+                evidence = []
 
-        age = content.get('age', 25)  # Default to 25 if not provided
-        sex = content.get('sex', 'M')  # Default to 'M' if not provided
+            if initial_evidence_match:
+                initial_evidence = initial_evidence_match.group(1)
+            else:
+                initial_evidence = None
+
+
+            converted_initial_evidence = merged_evidences[initial_evidence][initial_evidence]
+
+            symptoms = []
+            for row in evidence:
+                splitarray = row.split('_@_')
+                if len(splitarray) == 2 and "V" in splitarray[1]:
+                    Ev = splitarray[0]
+                    Va = splitarray[1]
+                    symptoms.append(f"{merged_evidences[Ev][Ev]}_@_{merged_evidences[Ev]['Values'][Va]}")
+                elif len(splitarray) == 2:
+                    Ev = splitarray[0]
+                    symptoms.append(f"{merged_evidences[Ev][Ev]}_@_{splitarray[1]}")
+                else:
+                    Ev = splitarray[0]
+                    symptoms.append(f"{merged_evidences[Ev][Ev]}")
+
+            age = content.get('age', 25) 
+            sex = content.get('sex', 'M')  
         
-        predicted_pathology = predict_pathology(age, sex, symptoms, converted_initial_evidence)
+            predicted_pathology = predict_pathology(age, sex, symptoms, converted_initial_evidence)
         
-        if predicted_pathology:
-            return jsonify({
-                "predicted_pathology": f"Your predicted pathology is {merged_conditions[predicted_pathology]}",
-            })
-        else:
-            return jsonify({
-                "output": message_for_extraction[-1],
-                "error": 'Unable to make prediction'
-            }), 400
+            if predicted_pathology:
+                return jsonify({
+                    "predicted_pathology": f"Your predicted pathology is {merged_conditions[predicted_pathology]}",
+                })
+            else:
+                return jsonify({
+                    "output": message_for_extraction[-1],
+                    "error": 'Unable to make prediction'
+                }), 400
+        except Exception as e:
+            logging.error(f"An error occurred: {str(e)}", exc_info=True)
+            return jsonify({"error": str(e)}), 500
     else:
-        reply = chat(user_input)
-        return jsonify({"user_input": user_input, "reply": reply})
+        try:
+            reply = chat(user_input)
+            return jsonify({"user_input": user_input, "reply": reply})
+        except Exception as e:
+            return jsonify({"error": str(e)}), 500
 
 @app.route('/questions', methods=['GET'])
 def get_questions():
