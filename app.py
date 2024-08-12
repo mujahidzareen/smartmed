@@ -11,6 +11,8 @@ import os
 import time
 from openai import APITimeoutError, RateLimitError, InternalServerError,APIConnectionError
 import logging
+from dotenv import load_dotenv
+
 load_dotenv()
 
 app = Flask(__name__)
