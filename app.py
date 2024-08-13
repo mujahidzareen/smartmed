@@ -5,11 +5,11 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 import joblib
 import numpy as np
-from openai import OpenAI
+import openai
 import prompts
 import os
 import time
-from openai import APITimeoutError, RateLimitError, InternalServerError,APIConnectionError
+from openai.error import Timeout, RateLimitError, InternalServerError, APIConnectionError
 import logging
 from dotenv import load_dotenv
 
@@ -18,11 +18,11 @@ load_dotenv()
 app = Flask(__name__)
 
 keyy = os.getenv("keyy")
-client = OpenAI(api_key=keyy)
+client = openai.OpenAI(api_key=keyy)
 
 main_prompt = prompts.system_message
 message_history = [{"role": "user", "content": main_prompt}]
-complition_history = []
+completion_history = []
 message_for_extraction = []
 
 # Load data and models
@@ -81,11 +81,11 @@ def chat(inp, role="user", max_retries=3, initial_wait=1):
                 messages=message_history,
                 max_tokens=200,
             )
-            complition_history.append(completion)
+            completion_history.append(completion)
             reply_content = completion.choices[0].message.content
             message_history.append({"role": "assistant", "content": f"{reply_content}"})
             return reply_content
-        except (APITimeoutError, RateLimitError, InternalServerError,APIConnectionError) as e:
+        except (Timeout, RateLimitError, InternalServerError, APIConnectionError) as e:
             if attempt == max_retries - 1:
                 raise Exception(f"Failed to get response from chat API after {max_retries} attempts: {str(e)}")
             wait_time = initial_wait * (2 ** attempt)
@@ -94,10 +94,10 @@ def chat(inp, role="user", max_retries=3, initial_wait=1):
 
 @app.route('/')
 def home():
-    return jsonify({'error1':"hello smartmed"})
+    return jsonify({'message': "hello smartmed"})
+
 @app.route('/chat', methods=['POST'])
 def chat_api():
-    # user_input = request.args.get("user_input")
     user_input = request.json.get("user_input")
     content = request.json
     
@@ -107,8 +107,6 @@ def chat_api():
         
             # Extract evidence and make prediction
             text = message_for_extraction[-1]
-
-
         
             # Regular expression to match the evidences list
             evidences_pattern = r"evidences\s*=\s*\[(.*?)\]"
@@ -117,6 +115,7 @@ def chat_api():
             # Regular expression to match the initial evidence
             initial_evidence_pattern = r"initial_evidence\s*=\s*\"(.*?)\""
             initial_evidence_match = re.search(initial_evidence_pattern, text)
+            
             if evidences_match:
                 # Extract the evidences list and clean it up
                 evidences_str = evidences_match.group(1).strip()
@@ -129,6 +128,8 @@ def chat_api():
             else:
                 initial_evidence = None
 
+            if initial_evidence is None or initial_evidence not in merged_evidences:
+                raise KeyError(f"Initial evidence '{initial_evidence}' not found in merged_evidences.")
 
             converted_initial_evidence = merged_evidences[initial_evidence][initial_evidence]
 
@@ -172,7 +173,7 @@ def chat_api():
 
 @app.route('/questions', methods=['GET'])
 def get_questions():
-    return jsonify([[data[i]['question_en'],i] for i in data.keys()])
+    return jsonify([[data[i]['question_en'], i] for i in data.keys()])
 
 @app.route('/answers', methods=['GET'])
 def get_answers():
@@ -194,6 +195,7 @@ def get_initial_evidences():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 # main_prompt = prompts.system_message
 # message_history = [{"role": "user", "content": main_prompt}]
 # completion_history = []
