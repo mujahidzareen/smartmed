@@ -2,6 +2,7 @@ from sklearn.preprocessing import LabelEncoder
 import numpy as np
 
 class ExtendedLabelEncoder(LabelEncoder):
+    print("I am inside the encoder function")
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
