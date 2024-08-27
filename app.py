@@ -1,5 +1,5 @@
 #here i sthe api code correct it
-from custom_encoder import ExtendedLabelEncoder
+# from custom_encoder import ExtendedLabelEncoder
 from flask import Flask, request, jsonify
 import json
 import re
