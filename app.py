@@ -1,5 +1,3 @@
-#here i sthe api code correct it
-# from custom_encoder import ExtendedLabelEncoder
 from flask import Flask, request, jsonify
 import json
 import re
@@ -10,9 +8,13 @@ from openai import OpenAI
 import prompts
 import os
 import time
-from openai import APITimeoutError, RateLimitError, InternalServerError,APIConnectionError
+from openai import APITimeoutError, RateLimitError, InternalServerError, APIConnectionError
 import logging
 from dotenv import load_dotenv
+
+# Import your custom encoder
+from custom_encoder import ExtendedLabelEncoder
+
 load_dotenv()
 
 app = Flask(__name__)
@@ -48,7 +50,7 @@ def predict_pathology(age, sex, symptoms, initial_evidence):
         sex_encoded = encoder_sex.transform([sex])[0]
     except ValueError as e:
         print(f"Error encoding 'SEX': {e}")
-        sex_encoded = encoder_sex.transform(['unknown'])[0] 
+        sex_encoded = encoder_sex.transform(['unknown'])[0]
     
     user_data = pd.DataFrame({
         'AGE': [age],
@@ -74,7 +76,7 @@ def chat(inp, role="user", max_retries=3, initial_wait=1):
             reply_content = completion.choices[0].message.content
             message_history.append({"role": "assistant", "content": f"{reply_content}"})
             return reply_content
-        except (APITimeoutError, RateLimitError, InternalServerError,APIConnectionError) as e:
+        except (APITimeoutError, RateLimitError, InternalServerError, APIConnectionError) as e:
             if attempt == max_retries - 1:
                 raise Exception(f"Failed to get response from chat API after {max_retries} attempts: {str(e)}")
             wait_time = initial_wait * (2 ** attempt)
@@ -84,23 +86,20 @@ def chat(inp, role="user", max_retries=3, initial_wait=1):
 @app.route('/')
 def home():
     return jsonify({'error1':"hello smartmed"})
+
 @app.route('/chat', methods=['POST'])
 def chat_api():
     user_input = request.json.get("user_input")
     content = request.json
     if user_input == "KINDLY PROVIDE THE OUTPUT":
         try:
-
             message_for_extraction.append(chat(user_input))
             text = message_for_extraction[-1]
-            # Regular expression to match the evidences list
             evidences_pattern = r"evidences\s*=\s*\[(.*?)\]"
             evidences_match = re.search(evidences_pattern, text, re.DOTALL)
-            # Regular expression to match the initial evidence
             initial_evidence_pattern = r"initial_evidence\s*=\s*\"(.*?)\""
             initial_evidence_match = re.search(initial_evidence_pattern, text)
             if evidences_match:
-                # Extract the evidences list and clean it up
                 evidences_str = evidences_match.group(1).strip()
                 evidence = re.findall(r'"(.*?)"', evidences_str)
             else:
@@ -150,7 +149,7 @@ def chat_api():
 
 @app.route('/questions', methods=['GET'])
 def get_questions():
-    return jsonify([[data[i]['question_en'],i] for i in data.keys()])
+    return jsonify([[data[i]['question_en'], i] for i in data.keys()])
 
 @app.route('/answers', methods=['GET'])
 def get_answers():
