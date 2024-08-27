@@ -100,6 +100,7 @@ def chat_api():
             evidences_match = re.search(evidences_pattern, text, re.DOTALL)
             initial_evidence_pattern = r"initial_evidence\s*=\s*\"(.*?)\""
             initial_evidence_match = re.search(initial_evidence_pattern, text)
+
             if evidences_match:
                 evidences_str = evidences_match.group(1).strip()
                 evidence = re.findall(r'"(.*?)"', evidences_str)
@@ -111,28 +112,31 @@ def chat_api():
             else:
                 initial_evidence = "E_56"
 
-            converted_initial_evidence = merged_evidences[initial_evidence][initial_evidence]
+            # Handle the case where initial_evidence may not be found
+            converted_initial_evidence = merged_evidences.get(initial_evidence, {}).get(initial_evidence, "Default_Evidence")
+
             symptoms = []
             for row in evidence:
                 splitarray = row.split('_@_')
                 if len(splitarray) == 2 and "V" in splitarray[1]:
                     Ev = splitarray[0]
                     Va = splitarray[1]
-                    if merged_evidences[Ev]['Values'][Va]:
-                        symptoms.append(f"{merged_evidences[Ev][Ev]}_@_{merged_evidences[Ev]['Values'][Va]}")
+                    if merged_evidences.get(Ev, {}).get('Values', {}).get(Va):
+                        symptoms.append(f"{merged_evidences[Ev].get(Ev, 'Unknown')}_@_{merged_evidences[Ev]['Values'][Va]}")
                 elif len(splitarray) == 2:
                     Ev = splitarray[0]
-                    symptoms.append(f"{merged_evidences[Ev][Ev]}_@_{splitarray[1]}")
+                    symptoms.append(f"{merged_evidences.get(Ev, {}).get(Ev, 'Unknown')}_@_{splitarray[1]}")
                 else:
                     Ev = splitarray[0]
-                    symptoms.append(f"{merged_evidences[Ev][Ev]}")
-            age = content.get('age', 25) 
-            sex = content.get('sex', 'M')  
+                    symptoms.append(f"{merged_evidences.get(Ev, {}).get(Ev, 'Unknown')}")
+
+            age = content.get('age', 25)
+            sex = content.get('sex', 'M')
             predicted_pathology = predict_pathology(age, sex, symptoms, converted_initial_evidence)
-        
+
             if predicted_pathology:
                 return jsonify({
-                    "predicted_pathology": f"Your predicted pathology is {merged_conditions[predicted_pathology]}",
+                    "predicted_pathology": f"Your predicted pathology is {merged_conditions.get(predicted_pathology, 'Unknown Pathology')}",
                 })
             else:
                 return jsonify({
@@ -147,6 +151,7 @@ def chat_api():
             return jsonify({"user_input": user_input, "reply": reply})
         except Exception as e:
             return jsonify({"error": str(e)}), 500
+
 
 @app.route('/questions', methods=['GET'])
 def get_questions():
