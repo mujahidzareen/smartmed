@@ -38,9 +38,10 @@ def load_model_and_encoder():
         pipeline = joblib.load('pathology_model.pkl')
         encoder_sex = joblib.load('encoder_sex.pkl')
     except FileNotFoundError:
-        print("Model or encoder file not found. Please ensure the files are saved correctly.")
+        print(f"AttributeError during loading: {e}")
         return None, None
     return pipeline, encoder_sex
+
 
 def predict_pathology(age, sex, symptoms, initial_evidence):
     pipeline, encoder_sex = load_model_and_encoder()
