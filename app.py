@@ -93,6 +93,7 @@ def chat_api():
     user_input = request.json.get("user_input")
     content = request.json
     if user_input == "KINDLY PROVIDE THE OUTPUT":
+        print("Hello I am inside chatapi")
         try:
             message_for_extraction.append(chat(user_input))
             text = message_for_extraction[-1]
